@@ -1,0 +1,34 @@
+{
+    "name": "\"DAR-GAZ\" Dariusz Gajos",
+    "modules": {
+        "service": {
+            "users": [
+                {
+                    "permission": "service.something",
+                    "max": 3
+                },
+                {
+                    "permission": "service.something2",
+                    "max": 5
+                }
+            ],
+            "records": [
+                {
+                    "table": "technicians",
+                    "where": [
+                        ["deleted_at", null]
+                    ],
+                    "max": 5
+                }
+            ]
+        },
+        "email": {
+            "users": [
+                {
+                    "permission": null,
+                    "max": 5
+                }
+            ]
+        }
+    }
+}
