@@ -29,7 +29,13 @@ class LicenseGenerate extends Command
                 return;
             }
 
-            $license = json_decode($storage->get("{$licenseName}.json"));
+            try {
+                $license = json_decode($storage->get("{$licenseName}.json"));
+            } catch (Exception $e) {
+                $this->error("/licenses/{$licenseName}.json not found.");
+                return;
+            }
+
             $hash = $this->randomSha256();
             $md5_hash = md5($hash);
 
