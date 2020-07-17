@@ -4,5 +4,5 @@ Homestead.json
 Homestead.yaml
 .env
 .phpunit.result.cache
-/licenses/*.key
+/licenses
 /licenses_output
