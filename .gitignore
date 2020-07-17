@@ -5,4 +5,6 @@ Homestead.yaml
 .env
 .phpunit.result.cache
 /licenses
+!/licenses/.gitkeep
 /licenses_output
+!/licenses_output/.gitkeep
